@@ -18,12 +18,11 @@ router.post('/register',function(req,res,next){
     var password2 =req.body.cpassword;
 
     req.check('name','name required').notEmpty();
-/*
 
     var err = req.validationErrors();
     console.log(err);
     res.render('registration',{err : err});
-*/
+
 
 });
 
